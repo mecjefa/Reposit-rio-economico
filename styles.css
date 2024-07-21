@@ -138,3 +138,73 @@ footer ul li a {
 footer ul li a:hover {
     color: #aaa;
 }
+
+/* Estilo Global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4b79a1; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.dropdown {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.dropdown-btn:hover {
+    color: #ddd;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #4b79a1;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #4b79a1;
+    color: #fff;
+}
+
+/* Mostrar menu ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
